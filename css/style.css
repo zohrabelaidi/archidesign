@@ -1,0 +1,435 @@
+/******************************
+GENERALITIES
+******************************/
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    --turquoise: #00748D;
+    --jaune-orange: #CB8606;
+    --gris-clair: #f9f9f9;
+    --texte: #414141;
+}
+
+
+body {
+    font-size: 1.8rem;
+    font-family: 'Nunito', sans-serif;
+    color: var(--texte);
+    background-color: var(--gris-clair);
+}
+
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+nav a,
+.logo a {
+    font-family: 'Fjalla One', sans-serif;
+}
+
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: var(--turquoise);
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+h2::before,
+h2::after {
+    content: " - ";
+    padding: 0 1rem;
+    color: var(--jaune-orange);
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+
+p {
+    line-height: 1.5;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+nav a,
+.logo a {
+    font-size: 2rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+}
+
+/******************************
+UTILITIES
+******************************/
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.jc-space-between {
+    justify-content: space-between;
+}
+
+.jc-space-around {
+    justify-content: space-around;
+}
+
+.jc-space-evenly {
+    justify-content: space-evenly;
+}
+
+.ai-center {
+    align-items: center;
+}
+
+.separator {
+    background-color: var(--jaune-orange);
+    height: 2px;
+    width: 20%;
+    margin: 2rem auto;
+}
+
+/* *********************
+IMAGES / FLOAT
+********************* */
+
+.img-left {
+    float: left;
+    margin-right: 1em;
+}
+
+.img-right {
+    float: right;
+    margin-left: 1em;
+}
+
+.clear {
+    clear: both;
+}
+
+/******************************
+HEADER + FOOTER
+******************************/
+
+header,
+footer {
+    background-color: var(--turquoise);
+    background-image: url(../img/path.png);
+    background-repeat: repeat-x;
+    background-position: bottom;
+}
+
+header .container,
+footer .container {
+    padding: 2rem;
+}
+
+.logo a {
+    color: #fff;
+}
+
+/* NAV */
+header nav ul,
+footer nav ul {
+    display: flex;
+}
+
+header nav li,
+footer nav li {
+    margin-left: 2rem;
+}
+
+header nav a {
+    color: #fff;
+    padding: 1rem 2rem;
+    transition: color .5s, background-color .5s;
+}
+
+
+
+header nav a:hover,
+header nav a.active {
+    color: var(--turquoise);
+    background-color: #fff;
+}
+
+/* Footer */
+footer nav a {
+    font-size: 2.4rem;
+    color: #fff;
+    transition: color .5s;
+}
+
+footer nav a:hover {
+    color: var(--jaune-orange);
+}
+
+/******************************
+LICENSE
+******************************/
+
+
+.license {
+    padding: 2em;
+    text-align: center;
+    color: #fff;
+    background-color: #444;
+}
+
+.license img {
+    width: 65px;
+    height: auto;
+}
+
+.license a {
+    text-decoration: none;
+    color: #DD5735;
+}
+
+
+/************************************************************
+******************************INDEX**************************
+************************************************************/
+
+
+
+/******************************
+MAIN
+******************************/
+
+/* BANNER */
+.banner {
+    background-image: url(../img/bg-header.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    padding: 15rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner h1 {
+    background-color: var(--jaune-orange);
+    text-transform: uppercase;
+    color: #fff;
+    padding: 1.2rem 2rem;
+}
+
+.banner p {
+    background-color: #fff;
+    color: var(--turquoise);
+    font-weight: bold;
+    padding: 1.2rem 2rem;
+}
+
+/* PRESTATION + PRESTATAIRES */
+.prestation,
+.prestataire {
+    padding: 4rem 2rem;
+}
+
+.prestation article {
+    width: 23%;
+    text-align: center;
+}
+
+.prestation article p {
+    text-align: left;
+
+}
+
+.btn {
+    display: block;
+    background-color: var(--turquoise);
+    color: #fff;
+    border: 1px solid var(--turquoise);
+    padding: 1rem 2rem;
+    margin: 2rem;
+    transition: color .5s, background-color .5s;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: var(--turquoise);
+}
+
+.prestation .icone {
+    background: var(--jaune-orange);
+    color: #fff;
+    padding: 1rem;
+}
+
+/* PRESTATAIRES */
+
+.prestataire img {
+    border: 3px solid var(--turquoise);
+
+
+}
+
+.prestataire a {
+    text-align: center;
+}
+
+
+/************************************************************
+************************PAGE REALISATIONS********************
+************************************************************/
+/* 
+.realisation_page -> class pour appeler les elements qui sont seulement dans cette page
+.page -> class pour appeler les elements qui sont sur toutes les pages sauf la page d'accueil
+*/
+
+.page {
+    padding: 4rem 2rem;
+}
+
+.page section {
+    width: 74%;
+}
+
+.page aside {
+    width: 24%;
+}
+
+.page h1 {
+    color: var(--jaune-orange);
+    text-align: center;
+    margin-bottom: 4rem;
+    text-transform: uppercase;
+}
+
+.page h1:before,
+.page h1:after {
+    content: ' - ';
+    color: var(--turquoise);
+}
+
+
+
+/* Grid Gallery */
+.grid_gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 1rem;
+}
+
+.grid_gallery img {
+    border: 3px solid var(--turquoise);
+
+    /* A mettre pour éviter le petit déclage en fin de ligne et les liserets blancs etre les images et la bordure */
+    align-self: stretch;
+    justify-self: stretch;
+}
+
+.grid_gallery .portrait {
+    grid-row: span 2;
+}
+
+
+/*  Aside  */
+.comments {
+    padding: 2rem;
+    margin-bottom: 4rem;
+}
+
+.comments blockquote {
+    margin: 0;
+}
+
+.comments blockquote p {
+    font-size: 1.6rem;
+    line-height: 1.2;
+    display: flex;
+}
+
+.comments blockquote p::before {
+    content: url(../img/quote.png);
+    margin-right: 1rem;
+}
+
+.comments cite {
+    font-size: 1.4rem;
+    color: var(--turquoise);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.comments cite::before {
+    content: url(../img/client.png);
+    margin-right: 1rem;
+}
+
+.scroll {
+    height: 480px;
+    overflow: scroll;
+}
+
+.tweets {
+    padding: 2rem;
+}
+
+.tweets li {
+    margin: 2rem 1rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 1.6rem;
+}
+
+.tweets li::before {
+    content: url(../img/circle.png);
+    margin-right: 1rem;
+}
+
+/************************************************************
+************************PAGE ACTUALITE********************
+************************************************************/
+
+
+.actualite_page article {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+.actualite_page article img {
+    width: 48%;
+}
+
+.actualite_page article .btn {
+    display: inline-block;
+    margin-right: 0;
+    margin-left: 0;
+}

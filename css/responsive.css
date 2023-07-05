@@ -1,0 +1,189 @@
+/******************************
+Tablette 1100px
+******************************/
+@media screen and (max-width:1100px) {
+
+    /*  Header */
+    header .container {
+        flex-direction: column;
+    }
+
+    header {
+        padding-top: 4rem;
+    }
+
+    header .logo a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .logo a img {
+        padding-bottom: 1rem;
+    }
+
+    /*  nav */
+    header nav {
+        margin-top: 4rem;
+        width: 100%;
+    }
+
+    header nav ul {
+        justify-content: space-around;
+    }
+
+    /***************
+    ***** Index ***** 
+    *****************/
+
+    /*  Main - prestation + prestataire */
+    .prestation article,
+    .prestataire a {
+        width: 40%;
+        margin-bottom: 5rem;
+    }
+
+    /***************************
+    ***** Page Réalisation ***** 
+    ****************************/
+    .page section {
+        width: 100%;
+    }
+
+    .page aside {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .comments {
+        width: 30%;
+    }
+
+    .tweets {
+        width: 65%;
+    }
+
+    .scroll {
+        height: 390px;
+    }
+
+    /***************************
+    ***** Page Actualité ***** 
+    ****************************/
+    .actualite_page article img {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+}
+
+
+
+/******************************
+Mobile 780px
+******************************/
+@media screen and (max-width:780px) {
+
+    /* Footer */
+    footer .container {
+        flex-direction: column-reverse;
+        padding: 3rem;
+    }
+
+    footer .logo a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .logo a img {
+        padding-bottom: 1rem;
+    }
+
+    footer nav a {
+        font-size: 3.5rem;
+    }
+
+    footer nav ul {
+        margin-top: 0;
+    }
+
+    /***************
+    ***** Index ***** 
+    *****************/
+
+    /*  Main - prestation */
+    .prestation article,
+    .prestataire a {
+        width: 90%;
+    }
+
+    .btn {
+        margin: 2rem 4rem;
+    }
+
+    /***************************
+    ***** Page Réalisation ***** 
+    ****************************/
+
+    aside {
+        flex-direction: column;
+    }
+
+    .comments {
+        width: 100%;
+    }
+
+    .tweets {
+        width: 100%;
+    }
+
+    .separator {
+        width: 70%;
+    }
+}
+
+
+
+
+
+/******************************
+petits mobiles 630px
+******************************/
+@media screen and (max-width:630px) {
+
+    /*  nav */
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav li {
+        margin-left: 0;
+    }
+
+    header nav a {
+        display: block;
+        text-align: center;
+    }
+
+    /***************
+    ***** Index ***** 
+    *****************/
+
+    /* Banner */
+    .banner h1 {
+        text-align: center;
+    }
+
+    .banner p {
+        margin-left: 10%;
+        margin-right: 10%;
+        text-align: center;
+    }
+
+    /*  Main - prestation */
+    .btn {
+        margin: 2rem 6rem;
+    }
+
+}
